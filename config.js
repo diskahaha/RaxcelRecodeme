@@ -35,18 +35,18 @@ global.APIKeys = { // APIKey Here
 }
 
 global.WM = '𝑴𝒚𝑩𝒐𝒕-𝑴𝒖𝒍𝒕𝒊 𝑫𝒆𝒗𝒊𝒄𝒆 𝑩𝒚 Denzz'
-global.linkgc = 'https://chat.whatsapp.com/G95q9ie35871RfQZbPmDV5'
+global.linkgc = 'https://chat.whatsapp.com/D8myLoppX2HJPHVzvKbxCa'
 global.linkig = 'Ga punya wowkwowk'
 global.deslink = ''
 global.titlink = 'Folllow me on Instagram'
-global.bodlink = '@i'm not gay'
+global.bodlink = '@xinzuo_bot'
 
 global.wait = '_*𝐬𝐞𝐝𝐚𝐧𝐠 𝐝𝐢 𝐩𝐫𝐨𝐬𝐞𝐬 ...*_'
 global.eror = '_*мααƒ ѕєяνєя тι∂αк ѕтαвιℓ..*_'
 
 //========Url Template Buttons==========//
 global.dtu = 'LINK GC BOT'
-global.urlnya = "https://chat.whatsapp.com/G95q9ie35871RfQZbPmDV5"
+global.urlnya = "https://chat.whatsapp.com/D8myLoppX2HJPHVzvKbxCa"
 
 //============= callButtons ============//
 global.dtc = '𝒄𝒂𝒍𝒍 𝒐𝒘𝒏𝒆𝒓'
