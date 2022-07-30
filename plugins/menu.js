@@ -10,19 +10,12 @@ const defaultMenu = {
 ┌─〔 %me 〕
 ├ *${ucapan()} %name*
 │
-├ Tersisa *%limit Limit*
-├ Role *%role*
-├ Level *%level (%exp / %maxexp)* [%xp4levelup]
-├ %totalexp XP secara Total
-│
 ├ Tanggal: *%week %weton, %date*
 ├ Tanggal Islam: *%dateIslamic*
 ├ Waktu: *%time*
 │
 ├ Uptime: *%uptime (%muptime)*
 ├ Database: %rtotalreg dari %totalreg
-├ Github:
-├ %github
 │
 ├ Note :
 ├ *Ⓟ* = Premium
@@ -257,30 +250,23 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 • Limit   : *${limit}*
 • Status  : *${global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) ? 'Owner 🗿' : 'Users ⚔️'}*
 • Premium : *${premium ? `${conn.msToDate(premiumTime - new Date() * 1)}` : 'Gratisan'}*
+• Pengguna Ke : *${rtotalreg}*
 
 ❏ *S T A T U S   I N F O*
 • Total User : *${rtotalreg} dari ${totalreg}*
 • Tersisa    : *${limit} Limit*
 • Role       : *${role}*
 • Level      : *${level}*
+• Aktif Selamat : *${uptime}*
 
-❏ 𝙏𝙄𝙈𝙀
+❏ INFO 
 » Wib : *${time}*
 » Tanggal : *${week} ${weton} ${date}*
 
-❏ 𝙏𝘼𝙃𝙐𝙉 𝘽𝘼𝙍𝙐
-_*${jhari} Hari ${jjam} Jam ${mmmenit} Menit ${ddetik} Detik*_
-
-❏ 𝙍𝘼𝙈𝘼𝘿𝘼𝙉
-_*${harii} Hari ${jamm} Jam ${menitt} Menit ${detikk} Detik*_
-
-❏ 𝙐𝙇𝘼𝙉𝙂 𝙏𝘼𝙃𝙐𝙉 𝙊𝙒𝙉𝙀𝙍
-_*${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik*_
-
-${pe}Note: Jika ada Fitur yg Error Lapor ke owner${pe}`,
+${pe}📮Note: Jika Fitur Ada yg bermasalah Hub Owner${pe}`,
       footer: wm,
       title: judul,
-      buttonText: "Klik Disini",
+      buttonText: "Klik Disini📝",
       sections
     }
     return conn.sendMessage(m.chat, listMessage, { quoted: m, mentions: await conn.parseMention(judul), contextInfo: { forwardingScore: 99999, isForwarded: true }})
@@ -370,16 +356,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   res = "Selamat dinihari"
   if (time >= 4) {
-    res = "Selamat pagi"
+    res = "Selamat pagi🌅"
   }
   if (time > 10) {
-    res = "Selamat siang"
+    res = "Selamat siang🌁"
   }
   if (time >= 15) {
-    res = "Selamat sore"
+    res = "Selamat sore🌇"
   }
   if (time >= 18) {
-    res = "Selamat malam"
+    res = "Selamat malam🌃"
   }
   return res
 }
