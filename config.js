@@ -26,7 +26,7 @@ global.APIKeys = { // APIKey Here
   'https://api.neoxr.eu.org': 'yntkts',
   'https://api.xteam.xyz': 'Apikeys',
   'https://melcanz.com': 'Apikeys',
-  'https://api.lolhuman.xyz': 'Apikeys',
+  'https://api.lolhuman.xyz': 'e508a5ffab09256662f87af9',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.me': 'apivinz',
   'https://pencarikode.xyz': 'pais',
